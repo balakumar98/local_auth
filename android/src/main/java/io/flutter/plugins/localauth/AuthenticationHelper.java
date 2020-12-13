@@ -227,13 +227,13 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
     title.setText((String) call.argument("signInTitle"));
     status.setText((String) call.argument("fingerprintHint"));
     Context context = new ContextThemeWrapper(activity, R.style.AlertDialogCustom);
-    OnClickListener cancelHandler =
-        new OnClickListener() {
-          @Override
-          public void onClick(DialogInterface dialog, int which) {
-            stop(false);
-          }
-        };
+    // OnClickListener cancelHandler =
+    //     new OnClickListener() {
+    //       @Override
+    //       public void onClick(DialogInterface dialog, int which) {
+    //         stop(false);
+    //       }
+    //     };
     fingerprintDialog =
         new AlertDialog.Builder(context)
             .setView(view)
