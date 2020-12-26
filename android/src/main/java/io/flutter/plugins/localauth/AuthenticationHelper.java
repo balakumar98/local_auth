@@ -269,7 +269,7 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
     new AlertDialog.Builder(context)
         .setView(view)
         .setPositiveButton((String) call.argument("goToSetting"), goToSettingHandler)
-        .setNegativeButton((String) call.argument(CANCEL_BUTTON), cancelHandler)
+        // .setNegativeButton((String) call.argument(CANCEL_BUTTON), cancelHandler)
         .setCancelable(false)
         .show();
   }
