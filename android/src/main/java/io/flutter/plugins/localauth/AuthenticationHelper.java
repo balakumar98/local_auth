@@ -243,36 +243,36 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
   }
 
   // Suppress inflateParams lint because dialogs do not need to attach to a parent view.
-  @SuppressLint("InflateParams")
-  private void showGoToSettingsDialog() {
-    View view = LayoutInflater.from(activity).inflate(R.layout.go_to_setting, null, false);
-    TextView message = (TextView) view.findViewById(R.id.fingerprint_required);
-    TextView description = (TextView) view.findViewById(R.id.go_to_setting_description);
-    message.setText((String) call.argument("fingerprintRequired"));
-    description.setText((String) call.argument("goToSettingDescription"));
-    Context context = new ContextThemeWrapper(activity, R.style.AlertDialogCustom);
-    OnClickListener goToSettingHandler =
-        new OnClickListener() {
-          @Override
-          public void onClick(DialogInterface dialog, int which) {
-            stop(false);
-            activity.startActivity(new Intent(Settings.ACTION_SECURITY_SETTINGS));
-          }
-        };
-    OnClickListener cancelHandler =
-        new OnClickListener() {
-          @Override
-          public void onClick(DialogInterface dialog, int which) {
-            stop(false);
-          }
-        };
-    new AlertDialog.Builder(context)
-        .setView(view)
-        .setPositiveButton((String) call.argument("goToSetting"), goToSettingHandler)
-        // .setNegativeButton((String) call.argument(CANCEL_BUTTON), cancelHandler)
-        .setCancelable(false)
-        .show();
-  }
+  // @SuppressLint("InflateParams")
+  // private void showGoToSettingsDialog() {
+  //   View view = LayoutInflater.from(activity).inflate(R.layout.go_to_setting, null, false);
+  //   TextView message = (TextView) view.findViewById(R.id.fingerprint_required);
+  //   TextView description = (TextView) view.findViewById(R.id.go_to_setting_description);
+  //   message.setText((String) call.argument("fingerprintRequired"));
+  //   description.setText((String) call.argument("goToSettingDescription"));
+  //   Context context = new ContextThemeWrapper(activity, R.style.AlertDialogCustom);
+  //   OnClickListener goToSettingHandler =
+  //       new OnClickListener() {
+  //         @Override
+  //         public void onClick(DialogInterface dialog, int which) {
+  //           stop(false);
+  //           activity.startActivity(new Intent(Settings.ACTION_SECURITY_SETTINGS));
+  //         }
+  //       };
+  //   OnClickListener cancelHandler =
+  //       new OnClickListener() {
+  //         @Override
+  //         public void onClick(DialogInterface dialog, int which) {
+  //           stop(false);
+  //         }
+  //       };
+  //   new AlertDialog.Builder(context)
+  //       .setView(view)
+  //       .setPositiveButton((String) call.argument("goToSetting"), goToSettingHandler)
+  //       // .setNegativeButton((String) call.argument(CANCEL_BUTTON), cancelHandler)
+  //       .setCancelable(false)
+  //       .show();
+  // }
 
   // Unused methods for activity lifecycle.
 
