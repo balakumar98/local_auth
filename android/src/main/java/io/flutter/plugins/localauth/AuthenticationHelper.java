@@ -239,7 +239,8 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
     button.setOnClickListener(new View.OnClickListener() {
         public void onClick(View v) {
             // Do something in response to button click
-            cancelHandler;
+            // cancelHandler;
+            stop(false);
         }
     });
     
