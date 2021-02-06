@@ -34,7 +34,7 @@ class AndroidAuthMessages {
       'fingerprintNotRecognized':
           fingerprintNotRecognized ?? androidFingerprintNotRecognized,
       'fingerprintSuccess': fingerprintSuccess ?? androidFingerprintSuccess,
-      'cancelButton': cancelButton ?? androidCancelButton,
+      // 'cancelButton': cancelButton ?? androidCancelButton,
       'signInTitle': signInTitle ?? androidSignInTitle,
       'fingerprintRequired':
           fingerprintRequiredTitle ?? androidFingerprintRequiredTitle,
