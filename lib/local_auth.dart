@@ -61,6 +61,7 @@ class LocalAuthentication {
       'localizedReason': localizedReason,
       'useErrorDialogs': useErrorDialogs,
       'stickyAuth': stickyAuth,
+      'darkTheme': darkTheme,
     };
     if (Platform.isIOS) {
       args.addAll(iOSAuthStrings.args);
