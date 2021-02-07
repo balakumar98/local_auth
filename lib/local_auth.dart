@@ -50,6 +50,7 @@ class LocalAuthentication {
   /// simulator.
   Future<bool> authenticateWithBiometrics({
     @required String localizedReason,
+    @required bool darkTheme,
     bool useErrorDialogs = true,
     bool stickyAuth = false,
     AndroidAuthMessages androidAuthStrings = const AndroidAuthMessages(),
