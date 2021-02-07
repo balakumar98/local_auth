@@ -228,7 +228,7 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
     // title.setText((String) call.argument("signInTitle"));
     title.setText((String) call.argument("darkTheme2"));
     View clr = LayoutInflater.from(activity).inflate(R.values.colors, null, false);
-    int dark = clr.getResources().getColor(R.color.dark_bg);
+    int dark = clr.getResources().getColor(R.colors.dark_bg);
     view.findViewById(R.id.main_layout).setBackgroundColor(dark);
     status.setText((String) call.argument("fingerprintHint"));
     Context context = new ContextThemeWrapper(activity, R.style.AlertDialogCustom);
