@@ -226,7 +226,7 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
     TextView status = (TextView) view.findViewById(R.id.fingerprint_status);
     fpDescription.setText((String) call.argument("localizedReason"));
     // title.setText((String) call.argument("signInTitle"));
-    title.setText((String) call.argument("darkTheme2"));
+    title.setText((bool) call.argument("darkTheme2"));
     status.setText((String) call.argument("fingerprintHint"));
     Context context = new ContextThemeWrapper(activity, R.style.AlertDialogCustom);
     OnClickListener cancelHandler =
