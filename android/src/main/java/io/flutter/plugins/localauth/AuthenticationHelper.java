@@ -224,6 +224,7 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
     TextView fpDescription = (TextView) view.findViewById(R.id.fingerprint_description);
     TextView title = (TextView) view.findViewById(R.id.fingerprint_signin);
     TextView status = (TextView) view.findViewById(R.id.fingerprint_status);
+    TextView button_cancel = (TextView) view.findViewById(R.id.button_cancel);
     boolean darkTheme = call.argument("darkTheme");
     fpDescription.setText((String) call.argument("localizedReason"));
     title.setText((String) call.argument("signInTitle"));
@@ -233,11 +234,13 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
       title.setTextColor(0xFFFFFFFF);
       fpDescription.setTextColor(0xFFFFFFFF);
       status.setTextColor(0xFFFFFFFF);
+      button_cancel.setTextColor(0xFFFFFFFF);
     } else {
       view.findViewById(R.id.main_layout).setBackgroundColor(0xFFFFFFFF);
       title.setTextColor(0xFF2E2E2E);
       fpDescription.setTextColor(0xFF2E2E2E);
       status.setTextColor(0xFF2E2E2E);
+      button_cancel.setTextColor(0xFF2E2E2E);
     }
     status.setText((String) call.argument("fingerprintHint"));
     Context context = new ContextThemeWrapper(activity, R.style.AlertDialogCustom);
@@ -249,8 +252,7 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
           }
         };
 
-    TextView button = (TextView) view.findViewById(R.id.button_cancel);
-    button.setOnClickListener(new View.OnClickListener() {
+    button_cancel.setOnClickListener(new View.OnClickListener() {
         public void onClick(View v) {
             // Do something in response to button click
             // cancelHandler;
