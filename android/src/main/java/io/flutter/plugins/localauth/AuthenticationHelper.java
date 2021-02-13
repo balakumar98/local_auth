@@ -249,8 +249,8 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
           }
         };
 
-    Button button = (Button) view.findViewById(R.id.button_cancel);
-    status.setOnClickListener(new View.OnClickListener() {
+    TextView button = (TextView) view.findViewById(R.id.button_cancel);
+    button.setOnClickListener(new View.OnClickListener() {
         public void onClick(View v) {
             // Do something in response to button click
             // cancelHandler;

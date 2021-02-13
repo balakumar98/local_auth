@@ -46,10 +46,11 @@
         android:paddingBottom="12dp"
         android:textColor="@color/hint_color" />
   </LinearLayout>
-  <Button
+  <TextView
     android:id="@+id/button_cancel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:textSize="@dimen/huge_text_size"
     android:text="Cancel" />
     <!-- android:onClick="sendMessage" /> -->
 </LinearLayout>
