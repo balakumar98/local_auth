@@ -231,7 +231,7 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
     // View clr = LayoutInflater.from(activity).inflate(R.values.colors, null, false);
     // int dark = LayoutInflater.from(activity).getResources().getColor(R.colors.dark_bg);
     // if(darTheme2) {
-    view.findViewById(R.id.main_layout).setBackgroundColor(424242);
+    view.findViewById(R.id.main_layout).setBackgroundColor(696969);
     // }else {
     //   view.findViewById(R.id.main_layout).setBackgroundColor(999999);
     // }
