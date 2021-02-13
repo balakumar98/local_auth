@@ -233,7 +233,7 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
     if(darTheme2) {
     // int color = Color.parseColor("#696969");
     // view.findViewById(R.id.main_layout).setBackgroundColor(6908265);
-    view.findViewById(R.id.main_layout).setBackgroundColor(0xFFFFFFFF);
+    view.findViewById(R.id.main_layout).setBackgroundColor(0x696969);
     // view.findViewById(R.id.main_layout).setBackgroundColor(696969);
     }else {
       // int color = Color.parseColor("#FFFFFF");
