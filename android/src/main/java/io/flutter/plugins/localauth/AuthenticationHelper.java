@@ -232,12 +232,13 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
     // int dark = LayoutInflater.from(activity).getResources().getColor(R.colors.dark_bg);
     if(darTheme2) {
     int color = Color.parseColor("#696969");
+    view.findViewById(R.id.main_layout).setBackgroundColor(color);
     // view.findViewById(R.id.main_layout).setBackgroundColor(696969);
     }else {
       int color = Color.parseColor("#FFFFFF");
+    view.findViewById(R.id.main_layout).setBackgroundColor(color);
     // view.findViewById(R.id.main_layout).setBackgroundColor(999999);
     }
-    view.findViewById(R.id.main_layout).setBackgroundColor(color);
     status.setText((String) call.argument("fingerprintHint"));
     Context context = new ContextThemeWrapper(activity, R.style.AlertDialogCustom);
     OnClickListener cancelHandler =
