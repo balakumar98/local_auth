@@ -50,9 +50,9 @@ class LocalAuthentication {
   /// simulator.
   Future<bool> authenticateWithBiometrics({
     @required String localizedReason,
-    // @required bool darkTheme,
-    String darkTheme2,
-    bool darTheme2 = true,
+    @required bool darkTheme,
+    // String darkTheme2,
+    // bool darTheme2 = true,
     bool useErrorDialogs = true,
     bool stickyAuth = false,
     AndroidAuthMessages androidAuthStrings = const AndroidAuthMessages(),
@@ -63,7 +63,7 @@ class LocalAuthentication {
       'localizedReason': localizedReason,
       'useErrorDialogs': useErrorDialogs,
       'stickyAuth': stickyAuth,
-      'darkTheme2': darTheme2,
+      'darkTheme': darkTheme,
     };
     if (Platform.isIOS) {
       args.addAll(iOSAuthStrings.args);
