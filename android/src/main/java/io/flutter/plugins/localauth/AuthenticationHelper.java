@@ -224,7 +224,7 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
     TextView fpDescription = (TextView) view.findViewById(R.id.fingerprint_description);
     TextView title = (TextView) view.findViewById(R.id.fingerprint_signin);
     TextView status = (TextView) view.findViewById(R.id.fingerprint_status);
-    boolean darTheme2 = call.argument("darTheme2");
+    // boolean darTheme2 = call.argument("darTheme2");
     fpDescription.setText((String) call.argument("localizedReason"));
     // title.setText((String) call.argument("signInTitle"));
     title.setText((String) call.argument("darkTheme2"));
