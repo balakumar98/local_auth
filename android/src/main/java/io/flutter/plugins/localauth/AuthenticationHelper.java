@@ -231,10 +231,8 @@ class AuthenticationHelper extends FingerprintManagerCompat.AuthenticationCallba
     // View clr = LayoutInflater.from(activity).inflate(R.values.colors, null, false);
     // int dark = LayoutInflater.from(activity).getResources().getColor(R.colors.dark_bg);
     if(darTheme2) {
-    // int color = Color.parseColor("#696969");
-    // view.findViewById(R.id.main_layout).setBackgroundColor(6908265);
-    view.findViewById(R.id.main_layout).setBackgroundColor(0xFF2E2E2E);
-    // view.findViewById(R.id.main_layout).setBackgroundColor(696969);
+    // view.findViewById(R.id.main_layout).setBackgroundColor(0xFF2E2E2E);
+    view.findViewById(R.id.main_layout).setBackgroundColor(0xFFFFFFFF);
     }else {
       // int color = Color.parseColor("#FFFFFF");
     view.findViewById(R.id.main_layout).setBackgroundColor(16777215);
