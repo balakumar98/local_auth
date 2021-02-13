@@ -52,7 +52,7 @@ class LocalAuthentication {
     @required String localizedReason,
     // @required bool darkTheme,
     String darkTheme2,
-    bool darTheme2 = true,
+    bool darTheme2 = false,
     bool useErrorDialogs = true,
     bool stickyAuth = false,
     AndroidAuthMessages androidAuthStrings = const AndroidAuthMessages(),
